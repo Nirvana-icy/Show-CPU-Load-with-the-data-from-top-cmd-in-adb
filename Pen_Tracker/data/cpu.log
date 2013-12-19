@@ -1,0 +1,380 @@
+
+
+
+User 62%, System 20%, IOW 0%, IRQ 0%
+User 762 + Nice 0 + Sys 245 + Idle 202 + IOW 3 + IRQ 0 + SIRQ 0 = 1212
+
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2828  1  62% S    12 164240K 127468K  fg root     /data/addFingerGestureService
+ 3517  0  10% R    25 519836K  38312K  fg u0_a68   com.bigbro.ProcessProfiler
+  399  1   4% S    15  92708K  11088K  fg system   /system/bin/surfaceflinger
+
+
+
+User 65%, System 21%, IOW 0%, IRQ 0%
+User 797 + Nice 0 + Sys 264 + Idle 151 + IOW 0 + IRQ 0 + SIRQ 0 = 1212
+
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2828  1  65% S    12 164368K 127636K  fg root     /data/addFingerGestureService
+ 3517  3   9% R    25 519836K  38384K  fg u0_a68   com.bigbro.ProcessProfiler
+  399  0   5% S    15  92708K  11088K  fg system   /system/bin/surfaceflinger
+
+
+
+User 62%, System 23%, IOW 0%, IRQ 0%
+User 771 + Nice 1 + Sys 296 + Idle 165 + IOW 4 + IRQ 0 + SIRQ 2 = 1239
+
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2828  1  63% S    12 164560K 127796K  fg root     /data/addFingerGestureService
+ 3517  2   8% S    25 521884K  38468K  fg u0_a68   com.bigbro.ProcessProfiler
+  399  0   4% S    15  92708K  11088K  fg system   /system/bin/surfaceflinger
+
+
+
+User 63%, System 22%, IOW 0%, IRQ 0%
+User 773 + Nice 0 + Sys 268 + Idle 173 + IOW 1 + IRQ 0 + SIRQ 0 = 1215
+
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2828  1  62% S    12 165340K 128612K  fg root     /data/addFingerGestureService
+ 3517  3   6% S    25 511660K  38640K  bg u0_a68   com.bigbro.ProcessProfiler
+  399  3   4% S    15  92708K  11088K  fg system   /system/bin/surfaceflinger
+
+
+
+User 56%, System 24%, IOW 0%, IRQ 0%
+User 701 + Nice 1 + Sys 299 + Idle 231 + IOW 2 + IRQ 0 + SIRQ 1 = 1235
+
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2828  1  61% S    12 164816K 128052K  fg root     /data/addFingerGestureService
+ 1206  2   4% R    17 537588K  45392K  fg u0_a22   com.android.launcher
+  399  0   4% S    15  92708K  11088K  fg system   /system/bin/surfaceflinger
+
+
+
+User 59%, System 22%, IOW 0%, IRQ 0%
+User 724 + Nice 0 + Sys 276 + Idle 213 + IOW 1 + IRQ 0 + SIRQ 0 = 1214
+
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2828  1  63% S    12 164944K 128204K  fg root     /data/addFingerGestureService
+  399  0   5% R    15  97832K  11088K  fg system   /system/bin/surfaceflinger
+ 1206  0   4% S    17 536756K  45092K  fg u0_a22   com.android.launcher
+
+
+
+User 62%, System 23%, IOW 0%, IRQ 0%
+User 760 + Nice 0 + Sys 291 + Idle 162 + IOW 4 + IRQ 0 + SIRQ 3 = 1220
+
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2828  1  63% S    12 165852K 129064K  fg root     /data/addFingerGestureService
+  399  0   6% S    15  92708K  11092K  fg system   /system/bin/surfaceflinger
+  450  0   3% S     6   5528K    248K     root     /sbin/adbd
+
+
+
+User 61%, System 23%, IOW 0%, IRQ 0%
+User 754 + Nice 0 + Sys 291 + Idle 177 + IOW 1 + IRQ 0 + SIRQ 1 = 1224
+
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2828  1  65% S    12 166648K 128656K  fg root     /data/addFingerGestureService
+ 1206  3   4% R    17 531864K  45944K  fg u0_a22   com.android.launcher
+  399  3   4% S    15  92708K  11092K  fg system   /system/bin/surfaceflinger
+
+
+
+User 58%, System 15%, IOW 0%, IRQ 0%
+User 710 + Nice 0 + Sys 192 + Idle 316 + IOW 6 + IRQ 0 + SIRQ 0 = 1224
+
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2828  1  65% S    12 165520K 128784K  fg root     /data/addFingerGestureService
+  450  0   3% S     6   5528K    248K     root     /sbin/adbd
+  399  2   1% S    15  92708K  11092K  fg system   /system/bin/surfaceflinger
+
+
+
+User 59%, System 20%, IOW 0%, IRQ 0%
+User 721 + Nice 0 + Sys 254 + Idle 239 + IOW 0 + IRQ 0 + SIRQ 0 = 1214
+
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2828  1  62% S    12 165648K 128916K  fg root     /data/addFingerGestureService
+  399  2   4% S    15  91016K  11092K  fg system   /system/bin/surfaceflinger
+  450  3   3% S     6   5528K    248K     root     /sbin/adbd
+
+
+
+User 57%, System 17%, IOW 0%, IRQ 0%
+User 701 + Nice 0 + Sys 216 + Idle 299 + IOW 4 + IRQ 0 + SIRQ 0 = 1220
+
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2828  1  60% S    12 165648K 128948K  fg root     /data/addFingerGestureService
+  399  2   3% S    15  91016K  11092K  fg system   /system/bin/surfaceflinger
+  450  0   3% S     6   5528K    248K     root     /sbin/adbd
+
+
+
+User 57%, System 17%, IOW 0%, IRQ 0%
+User 693 + Nice 0 + Sys 214 + Idle 305 + IOW 0 + IRQ 0 + SIRQ 0 = 1212
+
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2828  1  59% S    12 166968K 129088K  fg root     /data/addFingerGestureService
+  399  3   3% S    15  91016K  11092K  fg system   /system/bin/surfaceflinger
+  450  0   3% S     6   5528K    248K     root     /sbin/adbd
+
+
+
+User 57%, System 18%, IOW 0%, IRQ 0%
+User 702 + Nice 1 + Sys 223 + Idle 288 + IOW 7 + IRQ 0 + SIRQ 1 = 1222
+
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2828  1  60% S    12 165648K 128948K  fg root     /data/addFingerGestureService
+  399  0   3% S    15  91016K  11092K  fg system   /system/bin/surfaceflinger
+  450  0   3% S     6   5528K    248K     root     /sbin/adbd
+
+
+
+User 60%, System 14%, IOW 0%, IRQ 0%
+User 746 + Nice 0 + Sys 174 + Idle 309 + IOW 0 + IRQ 0 + SIRQ 0 = 1229
+
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2828  1  59% S    12 165648K 128948K  fg root     /data/addFingerGestureService
+  450  0   3% S     6   5528K    248K     root     /sbin/adbd
+  399  1   3% S    15  91016K  11092K  fg system   /system/bin/surfaceflinger
+
+
+
+User 56%, System 17%, IOW 0%, IRQ 0%
+User 703 + Nice 1 + Sys 213 + Idle 319 + IOW 6 + IRQ 0 + SIRQ 1 = 1243
+
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2828  1  58% S    12 165648K 128956K  fg root     /data/addFingerGestureService
+  450  0   3% S     7   6552K    252K     root     /sbin/adbd
+  399  1   3% S    15  91016K  11092K  fg system   /system/bin/surfaceflinger
+
+
+
+User 58%, System 23%, IOW 0%, IRQ 0%
+User 717 + Nice 0 + Sys 294 + Idle 216 + IOW 0 + IRQ 0 + SIRQ 0 = 1227
+
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2828  1  66% S    12 165840K 129112K  fg root     /data/addFingerGestureService
+  399  2   3% S    15  91016K  11092K  fg system   /system/bin/surfaceflinger
+  450  1   3% S     7   6552K    252K     root     /sbin/adbd
+
+
+
+User 55%, System 26%, IOW 0%, IRQ 0%
+User 678 + Nice 1 + Sys 318 + Idle 215 + IOW 3 + IRQ 0 + SIRQ 1 = 1216
+
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2828  1  65% S    12 165968K 129248K  fg root     /data/addFingerGestureService
+  399  0   4% S    15  91016K  11092K  fg system   /system/bin/surfaceflinger
+  450  0   3% S     7   6552K    252K     root     /sbin/adbd
+
+
+
+User 57%, System 21%, IOW 0%, IRQ 0%
+User 696 + Nice 0 + Sys 265 + Idle 251 + IOW 0 + IRQ 0 + SIRQ 0 = 1212
+
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2828  1  64% S    12 166160K 129396K  fg root     /data/addFingerGestureService
+  399  2   4% S    15  91016K  11092K  fg system   /system/bin/surfaceflinger
+  450  0   3% S     7   6552K    252K     root     /sbin/adbd
+
+
+
+User 58%, System 26%, IOW 0%, IRQ 0%
+User 708 + Nice 1 + Sys 324 + Idle 184 + IOW 4 + IRQ 0 + SIRQ 0 = 1221
+
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2828  1  61% S    12 167608K 130092K  fg root     /data/addFingerGestureService
+  399  0   5% S    15  92708K  11092K  fg system   /system/bin/surfaceflinger
+  450  0   3% S     7   6552K    252K     root     /sbin/adbd
+
+
+
+User 56%, System 17%, IOW 0%, IRQ 0%
+User 678 + Nice 0 + Sys 207 + Idle 311 + IOW 0 + IRQ 0 + SIRQ 0 = 1196
+
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2828  1  65% S    12 166416K 129704K  fg root     /data/addFingerGestureService
+  450  3   3% S     7   6552K    252K     root     /sbin/adbd
+  399  1   2% S    14  91684K  11088K  fg system   /system/bin/surfaceflinger
+
+
+
+User 60%, System 20%, IOW 0%, IRQ 0%
+User 743 + Nice 0 + Sys 249 + Idle 228 + IOW 3 + IRQ 0 + SIRQ 0 = 1223
+
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2828  1  61% S    12 167324K 130588K  fg root     /data/addFingerGestureService
+  399  1   3% S    15  91016K  11092K  fg system   /system/bin/surfaceflinger
+  450  0   3% S     7   6552K    252K     root     /sbin/adbd
+
+
+
+User 57%, System 20%, IOW 0%, IRQ 0%
+User 700 + Nice 0 + Sys 244 + Idle 269 + IOW 1 + IRQ 0 + SIRQ 0 = 1214
+
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2828  1  63% S    12 166736K 130024K  fg root     /data/addFingerGestureService
+  399  0   4% S    15  91016K  11092K  fg system   /system/bin/surfaceflinger
+ 4439  2   3% S    17 513264K  32376K  fg u0_a63   com.rssi.liu.emojicrush
+
+
+
+User 57%, System 23%, IOW 0%, IRQ 0%
+User 709 + Nice 0 + Sys 284 + Idle 225 + IOW 5 + IRQ 0 + SIRQ 0 = 1223
+
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2828  1  65% S    12 166864K 130152K  fg root     /data/addFingerGestureService
+  399  0   4% R    15  91016K  11092K  fg system   /system/bin/surfaceflinger
+ 4439  1   3% S    17 513404K  32468K  fg u0_a63   com.rssi.liu.emojicrush
+
+
+
+User 56%, System 25%, IOW 0%, IRQ 0%
+User 690 + Nice 0 + Sys 316 + Idle 211 + IOW 0 + IRQ 0 + SIRQ 1 = 1218
+
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2828  1  67% S    12 166992K 130280K  fg root     /data/addFingerGestureService
+  399  0   4% S    15  91016K  11092K  fg system   /system/bin/surfaceflinger
+ 4439  0   3% S    17 513396K  32468K  fg u0_a63   com.rssi.liu.emojicrush
+
+
+
+User 57%, System 24%, IOW 0%, IRQ 0%
+User 701 + Nice 0 + Sys 302 + Idle 211 + IOW 2 + IRQ 0 + SIRQ 0 = 1216
+
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2828  1  66% S    12 167184K 130444K  fg root     /data/addFingerGestureService
+  399  0   4% S    15  91016K  11092K  fg system   /system/bin/surfaceflinger
+  450  2   3% S     7   6552K    252K     root     /sbin/adbd
+
+
+
+User 58%, System 22%, IOW 0%, IRQ 0%
+User 704 + Nice 1 + Sys 273 + Idle 224 + IOW 1 + IRQ 0 + SIRQ 1 = 1204
+
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2828  1  65% S    12 167440K 130692K  fg root     /data/addFingerGestureService
+  399  1   4% S    15  91016K  11092K  fg system   /system/bin/surfaceflinger
+  450  0   3% S     7   6552K    252K     root     /sbin/adbd
+
+
+
+User 58%, System 19%, IOW 0%, IRQ 0%
+User 700 + Nice 0 + Sys 233 + Idle 268 + IOW 0 + IRQ 0 + SIRQ 0 = 1201
+
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2828  1  64% S    12 168348K 131636K  fg root     /data/addFingerGestureService
+  399  0   3% S    15  91016K  11092K  fg system   /system/bin/surfaceflinger
+  450  0   3% S     7   6552K    252K     root     /sbin/adbd
+
+
+
+User 58%, System 20%, IOW 0%, IRQ 0%
+User 711 + Nice 0 + Sys 249 + Idle 253 + IOW 4 + IRQ 0 + SIRQ 0 = 1217
+
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2828  1  62% S    12 167760K 131064K  fg root     /data/addFingerGestureService
+  399  0   4% S    15  91016K  11092K  fg system   /system/bin/surfaceflinger
+  450  0   3% S     7   6552K    252K     root     /sbin/adbd
+
+
+
+User 60%, System 19%, IOW 0%, IRQ 0%
+User 725 + Nice 0 + Sys 234 + Idle 247 + IOW 1 + IRQ 0 + SIRQ 0 = 1207
+
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2828  1  64% S    12 167888K 131204K  fg root     /data/addFingerGestureService
+  399  1   4% S    15  91016K  11092K  fg system   /system/bin/surfaceflinger
+  450  0   3% S     7   6552K    252K     root     /sbin/adbd
+
+
+
+User 59%, System 22%, IOW 0%, IRQ 0%
+User 713 + Nice 1 + Sys 266 + Idle 221 + IOW 3 + IRQ 0 + SIRQ 0 = 1204
+
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2828  1  63% S    12 168016K 131320K  fg root     /data/addFingerGestureService
+  399  3   4% S    16  93732K  11096K  fg system   /system/bin/surfaceflinger
+  450  0   3% R     7   6552K    252K     root     /sbin/adbd
+
+
+
+User 57%, System 23%, IOW 0%, IRQ 0%
+User 703 + Nice 0 + Sys 290 + Idle 224 + IOW 0 + IRQ 0 + SIRQ 0 = 1217
+
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2828  1  63% S    12 168208K 131436K  fg root     /data/addFingerGestureService
+  399  2   4% S    16  93732K  11096K  fg system   /system/bin/surfaceflinger
+  450  0   3% S     7   6552K    252K     root     /sbin/adbd
+
+
+
+User 59%, System 19%, IOW 0%, IRQ 0%
+User 716 + Nice 0 + Sys 229 + Idle 254 + IOW 5 + IRQ 0 + SIRQ 0 = 1204
+
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2828  1  64% S    12 168272K 131552K  fg root     /data/addFingerGestureService
+  450  2   3% S     7   6552K    252K     root     /sbin/adbd
+  399  2   3% S    16  93732K  11096K  fg system   /system/bin/surfaceflinger
+
+
+
+User 57%, System 21%, IOW 0%, IRQ 0%
+User 668 + Nice 0 + Sys 246 + Idle 252 + IOW 1 + IRQ 0 + SIRQ 0 = 1167
+
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2828  1  65% S    12 168400K 131684K  fg root     /data/addFingerGestureService
+  450  0   3% S     7   6552K    252K     root     /sbin/adbd
+  399  3   3% S    16  93732K  11096K  fg system   /system/bin/surfaceflinger
+
+
+
+User 58%, System 21%, IOW 0%, IRQ 0%
+User 712 + Nice 0 + Sys 259 + Idle 246 + IOW 4 + IRQ 0 + SIRQ 1 = 1222
+
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2828  1  64% S    12 168592K 131872K  fg root     /data/addFingerGestureService
+  450  2   3% S     7   6552K    252K     root     /sbin/adbd
+  399  1   3% S    16  93732K  11096K  fg system   /system/bin/surfaceflinger
+
+
+
+User 64%, System 25%, IOW 0%, IRQ 0%
+User 792 + Nice 0 + Sys 319 + Idle 119 + IOW 1 + IRQ 0 + SIRQ 1 = 1232
+
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2828  1  63% S    12 170104K 133144K  fg root     /data/addFingerGestureService
+ 1206  0   9% S    17 533024K  45100K  fg u0_a22   com.android.launcher
+  399  0   6% S    16  93732K  11096K  fg system   /system/bin/surfaceflinger
+
+
+
+User 62%, System 28%, IOW 0%, IRQ 0%
+User 768 + Nice 0 + Sys 343 + Idle 108 + IOW 1 + IRQ 0 + SIRQ 0 = 1220
+
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2828  1  64% S    12 169628K 132956K  fg root     /data/addFingerGestureService
+ 1206  0   8% S    17 533024K  45168K  fg u0_a22   com.android.launcher
+  399  0   6% S    16  93732K  11096K  fg system   /system/bin/surfaceflinger
+
+
+
+User 62%, System 26%, IOW 0%, IRQ 0%
+User 775 + Nice 0 + Sys 330 + Idle 129 + IOW 0 + IRQ 0 + SIRQ 0 = 1234
+
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2828  1  62% S    12 169104K 132420K  fg root     /data/addFingerGestureService
+ 1206  1   8% R    17 533024K  45268K  fg u0_a22   com.android.launcher
+  399  0   5% S    16  93732K  11096K  fg system   /system/bin/surfaceflinger
+
+
+
+User 64%, System 25%, IOW 0%, IRQ 0%
+User 783 + Nice 3 + Sys 312 + Idle 113 + IOW 5 + IRQ 0 + SIRQ 2 = 1218
+
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2828  1  63% S    12 169360K 132596K  fg root     /data/addFingerGestureService
+ 1206  0   6% S    17 533024K  45384K  fg u0_a22   com.android.launcher
+  399  1   5% S    16  93732K  11096K  fg system   /system/bin/surfaceflinger

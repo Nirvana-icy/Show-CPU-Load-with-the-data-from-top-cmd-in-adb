@@ -1,0 +1,2 @@
+<6>[ 3280.306522] original x:-9994 y=2738, byte0: 0, byte1=1, pressure: 302, sw:0
+<6>[ 3280.306574] original x:9997 y=2228, byte0: 0, byte1=1, pressure: 302, sw:0
