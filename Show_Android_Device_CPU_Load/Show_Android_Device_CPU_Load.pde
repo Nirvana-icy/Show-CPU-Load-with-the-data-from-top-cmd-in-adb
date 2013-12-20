@@ -77,14 +77,14 @@ void mouseMoved()
   if(y > 100) y = 100;
   if(y < 0) y = 0;
 
-  String str = "(" + x + "s" + "," + y + ")";
+  String str = "(" + x + "s" + "," + y + "%" + ")";
 
   fill(0);
   noStroke();
   rectMode(CENTER);
-  rect(width - 46, height - 30, 92, 22);
+  rect(width - 48, height - 30, 96, 22);
   fill(0, 100, 305, 204);
-  text(str, width - 92, height - 22);
+  text(str, width - 96, height - 22);
 }
 
 
