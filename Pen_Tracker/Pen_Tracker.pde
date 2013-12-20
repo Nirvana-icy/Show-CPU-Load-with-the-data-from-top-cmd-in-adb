@@ -1,7 +1,6 @@
-
 String[] rawStringFromLog;
 
-int delta = 5;
+int delta = 8;
 
 void loadLog()
 {
@@ -69,7 +68,7 @@ void drawOutThisPoint(int xValue, int yValue)
 //Get the xy's depth
 void mouseMoved()
 {
-  int x = mouseX/delta;
+  int x = 3*mouseX/delta;    //Top cmd in adb read the data every 3 second
   int y = 125 - mouseY;
   if(y > 100) y = 100;
   if(y < 0) y = 0;
