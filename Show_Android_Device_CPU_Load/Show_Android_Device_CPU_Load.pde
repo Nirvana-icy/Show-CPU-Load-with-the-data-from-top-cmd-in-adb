@@ -82,9 +82,9 @@ void mouseMoved()
   fill(0);
   noStroke();
   rectMode(CENTER);
-  rect(width - 48, height - 30, 96, 22);
+  rect(width - 53, height - 30, 106, 22);
   fill(0, 100, 305, 204);
-  text(str, width - 96, height - 22);
+  text(str, width - 106, height - 22);
 }
 
 
