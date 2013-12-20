@@ -6,6 +6,7 @@ void loadLog()
 {
   rawStringFromLog = loadStrings("cpu.log"); 
   int y0 = 0;
+  int y1 = 0;
   int time = 0;
   boolean waitForTheSecondPoint = false;
   
@@ -26,13 +27,16 @@ void loadLog()
             y0 = Integer.parseInt(yValue[1]);
             fill(0, 305, 0);
             drawOutThisPoint(time*delta, y0);
+            stroke(#BCEE68);
+            if (time -1 > 0) line((time - 1)*delta, 126 - y1, time*delta, 126 - y0);
           }
           else
           {
             waitForTheSecondPoint = false;
             drawOutThisPoint(time*delta, Integer.parseInt(yValue[1]));  //(xValue + 18000)/30
+            y1 = Integer.parseInt(yValue[1]);
             stroke(#BCEE68);
-            line((time - 1)*delta, 126 - y0, time*delta, 126 - Integer.parseInt(yValue[1]));
+            line((time - 1)*delta, 126 - y0, time*delta, 126 - y1);
           }
         }
     }
@@ -78,9 +82,9 @@ void mouseMoved()
   fill(0);
   noStroke();
   rectMode(CENTER);
-  rect(width - 45, height - 30, 90, 22);
+  rect(width - 46, height - 30, 92, 22);
   fill(0, 100, 305, 204);
-  text(str, width - 86, height - 22);
+  text(str, width - 92, height - 22);
 }
 
 
