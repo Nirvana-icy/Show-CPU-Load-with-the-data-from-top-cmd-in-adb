@@ -1,11 +1,11 @@
 String[] rawStringFromLog;
 
 int delta = 8;  //Draw one point every 8 pixel
-int yScale = 3;
 int cpuReadInterval = 3;  //Default Top cmd read cpu load info every 3 second
-int cpuSpecFrom = 26 + 100 - 10;
 
-int cpuLoadMax_Min = 20;   
+int cpuSpecFrom = 26 + 100 - 30;  //Low cpu load line in spec
+
+int cpuLoadMax_Min = 20;    //High cpu load line in spec
 int cpuSpecTo = cpuSpecFrom - cpuLoadMax_Min;
 
 void loadLog()
@@ -13,7 +13,7 @@ void loadLog()
   rawStringFromLog = loadStrings("cpu.log"); 
   int y = 0;
   int time = 0;
-  
+  //Get the average cpu info.
   for (int i = 0; i < rawStringFromLog.length; i++)
   {
     String[] INPUT = match(rawStringFromLog[i], "/system/bin/depthcameraservice");
@@ -24,6 +24,7 @@ void loadLog()
       {
         time++;
         y = Integer.parseInt(yValue[1]);
+        fill(0, 0, 255);
         drawOutThisPoint(time*delta, y);
        }
     }
@@ -36,6 +37,7 @@ void loadLog()
       if (yValue != null)
       {
         y = Integer.parseInt(yValue[1]);
+        fill(0,255,0);
         drawOutThisPoint(time*delta, y);
        }
     }
@@ -47,8 +49,9 @@ void loadLog()
       if (yValue != null)
       {
         y = Integer.parseInt(yValue[1]);
+        fill(255,0,0);
         drawOutThisPoint(time*delta, y);
-       }
+      }
     }
   }
 }
@@ -76,8 +79,6 @@ void drawOutThisPoint(int xValue, int yValue)
 {
   //  println("x:" + x + "  y:" + y);
   noStroke();
-  if(yValue < cpuSpecFrom) fill(255, 0, 0);  // '<' means yValue is above the cpuSpec line
-  else fill(0, 305, 0);
   ellipse(xValue, 126 - yValue, 4, 4);
 }
 
