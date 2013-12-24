@@ -1,44 +1,54 @@
 String[] rawStringFromLog;
 
-int delta = 8;
+int delta = 8;  //Draw one point every 8 pixel
+int yScale = 3;
+int cpuReadInterval = 3;  //Default Top cmd read cpu load info every 3 second
+int cpuSpecFrom = 26 + 100 - 10;
+
+int cpuLoadMax_Min = 20;   
+int cpuSpecTo = cpuSpecFrom - cpuLoadMax_Min;
 
 void loadLog()
 {
   rawStringFromLog = loadStrings("cpu.log"); 
-  int y0 = 0;
-  int y1 = 0;
+  int y = 0;
   int time = 0;
-  boolean waitForTheSecondPoint = false;
   
   for (int i = 0; i < rawStringFromLog.length; i++)
   {
-    String[] INPUT = match(rawStringFromLog[i], "/data/addFingerGestureService");
+    String[] INPUT = match(rawStringFromLog[i], "/system/bin/depthcameraservice");
     if (INPUT != null)     //Trim out the raw x,y.Not the android pad x,y. The string INPUT in log represent it is android pad log.
     {
-      String[] yValue = match(rawStringFromLog[i], "1  (.*?)% S    12");            //Find out the y value
-      
+      String[] yValue = match(rawStringFromLog[i], "0  (.*?)% S     2");            //Find out the y value
       if (yValue != null)
       {
         time++;
-          //println("x:" + xValue[1] + "  y:" + yValue[1]);
-          if (!waitForTheSecondPoint)
-          {
-            waitForTheSecondPoint = true;
-            y0 = Integer.parseInt(yValue[1]);
-            fill(0, 305, 0);
-            drawOutThisPoint(time*delta, y0);
-            stroke(#BCEE68);
-            if (time -1 > 0) line((time - 1)*delta, 126 - y1, time*delta, 126 - y0);
-          }
-          else
-          {
-            waitForTheSecondPoint = false;
-            drawOutThisPoint(time*delta, Integer.parseInt(yValue[1]));  //(xValue + 18000)/30
-            y1 = Integer.parseInt(yValue[1]);
-            stroke(#BCEE68);
-            line((time - 1)*delta, 126 - y0, time*delta, 126 - y1);
-          }
-        }
+        y = Integer.parseInt(yValue[1]);
+        drawOutThisPoint(time*delta, y);
+       }
+    }
+    //read and show multi cpu info by press '1' key in top cmd
+    //cpu0
+    String[] cpu0Input = match(rawStringFromLog[i], "/system/bin/depthcameraservice");
+    if (cpu0Input != null)     //Trim out the raw x,y.Not the android pad x,y. The string INPUT in log represent it is android pad log.
+    {
+      String[] yValue = match(rawStringFromLog[i], "0  (.*?)% S     2");            //Find out the y value
+      if (yValue != null)
+      {
+        y = Integer.parseInt(yValue[1]);
+        drawOutThisPoint(time*delta, y);
+       }
+    }
+    //cpu1
+    String[] cpu1Input = match(rawStringFromLog[i], "/system/bin/depthcameraservice");
+    if (cpu1Input != null)     //Trim out the raw x,y.Not the android pad x,y. The string INPUT in log represent it is android pad log.
+    {
+      String[] yValue = match(rawStringFromLog[i], "0  (.*?)% S     2");            //Find out the y value
+      if (yValue != null)
+      {
+        y = Integer.parseInt(yValue[1]);
+        drawOutThisPoint(time*delta, y);
+       }
     }
   }
 }
@@ -50,11 +60,11 @@ void setup()
   textSize(18);
   loadLog();
   //Draw the central line in x.The area in the left of this line => x<0.
-  fill(100, 100, 100);
   stroke(126);
-  line(0, 127, width, 127);
-  line(0, 76, width, 76);
-  line(0, 26, width, 26);
+  line(0, 127, width, 127);  //  %0
+  line(0, cpuSpecTo, width, cpuSpecTo);   //  
+  line(0, cpuSpecFrom, width, cpuSpecFrom);  //  cpuSpec
+  line(0, 26, width, 26);   //  %100
 }
 
 void draw()
@@ -66,13 +76,15 @@ void drawOutThisPoint(int xValue, int yValue)
 {
   //  println("x:" + x + "  y:" + y);
   noStroke();
+  if(yValue < cpuSpecFrom) fill(255, 0, 0);  // '<' means yValue is above the cpuSpec line
+  else fill(0, 305, 0);
   ellipse(xValue, 126 - yValue, 4, 4);
 }
 
 //Get the xy's depth
 void mouseMoved()
 {
-  int x = 3*mouseX/delta;    //Top cmd in adb read the data every 3 second
+  int x = cpuReadInterval*mouseX/delta;    //Top cmd in adb read the data every 3 second
   int y = 125 - mouseY;
   if(y > 100) y = 100;
   if(y < 0) y = 0;
