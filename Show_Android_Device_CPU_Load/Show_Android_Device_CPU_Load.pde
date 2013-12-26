@@ -11,7 +11,7 @@ int cpuSpecTo = cpuSpecFrom - cpuLoadMax_Min;
 void loadLog()
 {
   rawStringFromLog = loadStrings("cpu.log"); 
-  int y = 0;
+  float y = 0;
   int time = 0;
   //Get the average cpu info.
   for (int i = 0; i < rawStringFromLog.length; i++)
@@ -19,38 +19,38 @@ void loadLog()
     String[] INPUT = match(rawStringFromLog[i], "/system/bin/depthcameraservice");
     if (INPUT != null)     //Trim out the raw x,y.Not the android pad x,y. The string INPUT in log represent it is android pad log.
     {
-      String[] yValue = match(rawStringFromLog[i], "0  (.*?)% S     2");            //Find out the y value
+      String[] yValue = match(rawStringFromLog[i], "   0 (.*?) /system/bin/depthcameraservice");            //Find out the y value
       if (yValue != null)
       {
         time++;
-        y = Integer.parseInt(yValue[1]);
+        y = Float.parseFloat(yValue[1]); 
         fill(0, 0, 255);
-        drawOutThisPoint(time*delta, y);
+        drawOutThisPoint(time*delta, int(y));
        }
     }
     //read and show multi cpu info by press '1' key in top cmd
     //cpu0
-    String[] cpu0Input = match(rawStringFromLog[i], "/system/bin/depthcameraservice");
+    String[] cpu0Input = match(rawStringFromLog[i], "CPU0:");
     if (cpu0Input != null)     //Trim out the raw x,y.Not the android pad x,y. The string INPUT in log represent it is android pad log.
     {
-      String[] yValue = match(rawStringFromLog[i], "0  (.*?)% S     2");            //Find out the y value
+      String[] yValue = match(rawStringFromLog[i], "CPU0: (.*?)% usr");            //Find out the y value
       if (yValue != null)
       {
-        y = Integer.parseInt(yValue[1]);
+        y = Float.parseFloat(yValue[1]);
         fill(0,255,0);
-        drawOutThisPoint(time*delta, y);
+        drawOutThisPoint(time*delta, int(y));
        }
     }
     //cpu1
-    String[] cpu1Input = match(rawStringFromLog[i], "/system/bin/depthcameraservice");
+    String[] cpu1Input = match(rawStringFromLog[i], "CPU1:");
     if (cpu1Input != null)     //Trim out the raw x,y.Not the android pad x,y. The string INPUT in log represent it is android pad log.
     {
-      String[] yValue = match(rawStringFromLog[i], "0  (.*?)% S     2");            //Find out the y value
+      String[] yValue = match(rawStringFromLog[i], "CPU1: (.*?)% usr");            //Find out the y value
       if (yValue != null)
       {
-        y = Integer.parseInt(yValue[1]);
+        y = Float.parseFloat(yValue[1]);
         fill(255,0,0);
-        drawOutThisPoint(time*delta, y);
+        drawOutThisPoint(time*delta, int(y));
       }
     }
   }
