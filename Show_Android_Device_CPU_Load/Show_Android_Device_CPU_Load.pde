@@ -10,6 +10,17 @@ int cpuSpecTo = cpuSpecFrom - cpuLoadMax_Min;
 
 void loadLog()
 {
+  rawStringFromLog = loadStrings("phone_click_cpuload.log"); 
+  float y = 0;
+  int time = 0;
+  float sum = 0.0f;
+  //Get the average cpu info.
+  for (int i = 0; i < rawStringFromLog.length; i++)
+  {
+    String[] INPUT = match(rawStringFromLog[i], "depthcameraservice -d");
+    if (INPUT != null)     //Trim out the raw x,y.Not the android pad x,y. The string INPUT in log represent it is android pad log.
+    {
+      String[] yValue = match(rawStringFromLog[i],"   0 (.*?) depthcameraservice -d");            //Find out the y value
   rawStringFromLog = loadStrings("cpu.log"); 
   float y = 0;
   int time = 0;
@@ -20,6 +31,7 @@ void loadLog()
     if (INPUT != null)     //Trim out the raw x,y.Not the android pad x,y. The string INPUT in log represent it is android pad log.
     {
       String[] yValue = match(rawStringFromLog[i], "   0 (.*?) /system/bin/depthcameraservice");            //Find out the y value
+>>>>>>> 8065244ed0315b9af2c03b33f179dd9b0b2bff26
       if (yValue != null)
       {
         time++;
@@ -37,6 +49,10 @@ void loadLog()
       if (yValue != null)
       {
         y = Float.parseFloat(yValue[1]);
+<<<<<<< HEAD
+        sum = sum + y;
+=======
+>>>>>>> 8065244ed0315b9af2c03b33f179dd9b0b2bff26
         fill(0,255,0);
         drawOutThisPoint(time*delta, int(y));
        }
@@ -54,6 +70,9 @@ void loadLog()
       }
     }
   }
+  println("cpu0 average = ", sum/time);
+  println("cpu0 sum = ", sum);
+  println("read cpu0 times = ", time);
 }
 
 void setup()
