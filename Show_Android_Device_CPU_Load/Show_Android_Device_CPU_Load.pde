@@ -10,7 +10,7 @@ int cpuSpecTo = cpuSpecFrom - cpuLoadMax_Min;
 
 void loadLog()
 {
-  rawStringFromLog = loadStrings("phone_click_cpuload.log"); 
+  rawStringFromLog = loadStrings("cpu.log"); 
   float y = 0;
   int time = 0;
   float sum = 0.0f;
